@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px 10%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #474768;
+}
+
+.logo svg {
+    margin-right: 15px;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.push a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 100px;
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+.filters-and-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.filters {
+    font-weight: 600;
+}
+
+.filters a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.filters-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    min-width: 160px;
+}
+
+.filters-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filters:hover .filters-content {
+    display: block;
+}
+
+.sort select {
+    padding: 5px;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.sort select option {
+    font-size: medium;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sort select option:hover {
+    background: #7c7777;
+}
+
+.sort select:focus {
+    outline: none;
+}
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 85vh;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 740px) {
+    .goods {
+      justify-content: center;
+    }
+}
+
+@media (max-width: 1170px) {
+    .logo {
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .push {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .push a {
+        margin-right: 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+.good {
+    padding: 20px;
+    padding-top: 0;
+    max-width: 400px;
+}
+
+.good p {
+    color: #474768;
+}
+
+.good p strong {
+    color: black;
+}
+
+h2 {
+    font-weight: 555;
+}
+
+.good img {
+    width: 100%;
+    height: auto;
+    max-width: 335px;
+}
+
+footer {
+    padding: 0 10%;
+    color: #474768;
+}
